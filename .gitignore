@@ -1,0 +1,26 @@
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Java / Spring
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.mvn/apache-maven/
+backend/.mvn/apache-maven.zip
+*.log
+
+# Local configuration and generated data
+.env
+.env.*
+!.env.example
+docker-data/
+
+# IDE / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.iml
+.DS_Store
+Thumbs.db

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #20302d; background: #f4f1eb; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; text-decoration: none; }
+.shell { max-width: 1240px; margin: 0 auto; padding: 28px 6vw 72px; }
+.nav { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #d9d7cf; padding-bottom: 22px; }
+.brand { font-weight: 700; letter-spacing: -.04em; font-size: 1.1rem; } .brand span { color: #b6583e; }
+.nav-links { display: flex; gap: 28px; font-size: .85rem; color: #64706c; }
+.hero { padding: clamp(72px, 13vw, 160px) 0 90px; max-width: 780px; }
+.eyebrow, .number { color: #b6583e; text-transform: uppercase; letter-spacing: .16em; font-size: .7rem; font-weight: 700; }
+h1 { font-size: clamp(3.6rem, 9vw, 7.5rem); letter-spacing: -.08em; line-height: .92; margin: 20px 0 30px; font-weight: 500; } h1 em { font-family: 'Playfair Display', serif; color: #547066; }
+.lede { max-width: 430px; color: #65716d; line-height: 1.7; }
+.search-row { display: flex; margin-top: 34px; max-width: 600px; } input, button { border: 1px solid #ced0c8; padding: 16px 18px; font: inherit; } input { flex: 1; background: #fffdf9; border-radius: 4px 0 0 4px; } button { background: #20302d; color: #fff; border-radius: 0 4px 4px 0; } button:disabled, input:disabled { opacity: .85; cursor: not-allowed; }
+.status { color: #78837f; font-size: .75rem; display: flex; gap: 8px; align-items: center; margin-top: 18px; } .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #d0a44c; } .status-dot.ready { background: #5d9872; } .status-dot.unavailable { background: #b6583e; }
+.feature-grid { border-top: 1px solid #d9d7cf; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; padding-top: 28px; } .feature-grid h2 { font-size: 1.25rem; font-weight: 500; margin: 20px 0 10px; } .feature-grid p { color: #78837f; line-height: 1.6; font-size: .9rem; max-width: 250px; }
+@media (max-width: 640px) { .nav-links { gap: 12px; } .feature-grid { grid-template-columns: 1fr; gap: 10px; } .hero { padding-top: 90px; } .search-row { flex-direction: column; gap: 8px; } input, button { border-radius: 4px; } }
